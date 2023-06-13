@@ -154,7 +154,7 @@ function App({images}: any) {
         <Canvas gl={{alpha: false}} dpr={[1, 1.5]} camera={{fov: 70, position: [0, 2, 15]}}>
           <color attach="background" args={['#191920']}/>
           <fog attach="fog" args={['#191920', 0, 15]}/>
-          <Environment preset="city"/>
+          <Environment files="https://assets.unegma.net/shared/threejs-environments/city.hdr"/>
 
           <group position={[0, -0.5, 0]}>
             <Frames
